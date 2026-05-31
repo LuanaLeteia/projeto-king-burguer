@@ -11,9 +11,61 @@
 
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/main.js" defer></script>
-    
 </head>
 <body>
-    
+    <div class="alert-banner" role="status">
+        ATENÇÃO! DESCONTOS E CUPONS PROMOCIONAIS SÓ PODEM SER OBTIDOS EM NOSSOS CANAIS OFICIAIS
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner container">
+            <a href="#" class="brand" aria-label="King Burger Home">
+                <span class="brand-symbol" aria-hidden="true">👑</span>
+                <div class="brand-text">
+                    <span class="brand-king">KING</span>
+                    <span class="brand-burger">BURGER</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegação principal">
+                <a href="#menu">MENU</a>
+                <a href="#promocoes">PROMOÇÕES</a>
+                <a href="#kids">KIDS MENU</a>
+                <a href="#app">APP</a>
+            </nav>
+
+            <div class="header-actions">
+                <label for="nav-toggle" class="mobile-menu-button" aria-label="Abrir menu">
+                    <span class="material-symbols-outlined">menu</span>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+
+    <aside class="mobile-drawer" aria-label="Menu móvel">
+        <div class="drawer-top">
+            <a href="#" class="drawer-brand" aria-label="King Burger Home">
+                <span class="drawer-brand-symbol" aria-hidden="true">👑</span>
+                <div class="drawer-brand-text">
+                    <span class="brand-king">KING</span>
+                    <span class="brand-burger">BURGER</span>
+                </div>
+            </a>
+            <label for="nav-toggle" class="drawer-close" aria-label="Fechar menu">
+                <span class="material-symbols-outlined">close</span>
+            </label>
+        </div>
+
+        <nav class="drawer-nav" aria-label="Navegação do menu móvel">
+            <a href="#menu">MENU</a>
+            <a href="#promocoes">PROMOÇÕES</a>
+            <a href="#kids">KIDS MENU</a>
+            <a href="#app">APP</a>
+        </nav>
+    </aside>
+
+    <label for="nav-toggle" class="drawer-backdrop" aria-label="Fechar menu"></label>
 </body>
 </html>
