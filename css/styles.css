@@ -402,14 +402,20 @@ button, label {
 
 .section-king-dobro {
   position: relative;
-  background: #0D0D0D url('../public/images/king-em-dobro-1.png') right center / cover no-repeat;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.92), rgba(17, 17, 17, 0.82)),
+    url('../public/images/king-em-dobro-1.png') right center / cover no-repeat;
   color: #ffffff;
   overflow: hidden;
   padding: 3.5rem 0;
 }
 
 .section-king-dobro::before {
-  display: none;
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at right, rgba(255, 255, 255, 0.08), transparent 32%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.7));
+  pointer-events: none;
 }
 
 .section-king-dobro__inner {
@@ -506,7 +512,7 @@ button, label {
 }
 
 .king-dobro-card {
-  width: min(100%, 240px);
+  width: min(100%, 360px);
   aspect-ratio: 1 / 1;
   background: #faf7f2;
   border-radius: 1rem;
@@ -829,5 +835,141 @@ button, label {
   .drawer-backdrop,
   .nav-toggle {
     display: none;
+  }
+}
+
+/* ============================================ */
+/* Seção: Ingredientes Premium                 */
+/* ============================================ */
+
+.section-premium-ingredients {
+  background: #F5ECD7;
+  padding: 3rem var(--container-padding);
+}
+
+.section-premium-ingredients__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.section-premium-ingredients__header {
+  text-align: center;
+  max-width: 800px;
+}
+
+.section-premium-ingredients__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+}
+
+.section-premium-ingredients__subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: rgba(26, 26, 26, 0.6);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-premium-ingredients__grid {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.ingredient-card {
+  width: min(100%, 120px);
+  height: 160px;
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.ingredient-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+}
+
+.ingredient-card__icon {
+  font-size: 3rem;
+  line-height: 1;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.ingredient-card__name {
+  margin: 0 0 0.5rem;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.ingredient-card__description {
+  margin: 0;
+  font-size: 0.625rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Desktop: 6 colunas */
+@media (min-width: 900px) {
+  .section-premium-ingredients__grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(120px, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .ingredient-card {
+    width: 100%;
+  }
+}
+
+/* Mobile: 2 colunas */
+@media (max-width: 640px) {
+  .section-premium-ingredients {
+    padding: 2rem var(--container-padding);
+  }
+
+  .section-premium-ingredients__title {
+    font-size: clamp(1.75rem, 6vw, 2.5rem);
+  }
+
+  .section-premium-ingredients__subtitle {
+    font-size: 0.8rem;
+  }
+
+  .section-premium-ingredients__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .ingredient-card {
+    width: 100%;
   }
 }
