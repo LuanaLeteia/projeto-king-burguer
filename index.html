@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,14 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&family=Open+Sans:wght@400;500;600;700&family=Titan+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@700&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0,0&family=Open+Sans:wght@400;500;600;700&family=Titan+One&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./css/styles.css">
     <script src="./js/main.js" defer></script>
 </head>
+
 <body>
     <div class="alert-banner" role="status">
         ATENÇÃO! DESCONTOS E CUPONS PROMOCIONAIS SÓ PODEM SER OBTIDOS EM NOSSOS CANAIS OFICIAIS
@@ -77,12 +81,14 @@
                         <span class="hero-title__line hero-title__line--green">KB NINJA</span>
                         <span class="hero-title__line">CHEGOU!</span>
                     </h1>
-                    <p class="hero-description">A explosão de sabor estilo <span>Tartarugas Ninja</span> chegou com combo exclusivo para devoradores de aventura.</p>
+                    <p class="hero-description">A explosão de sabor estilo <span>Tartarugas Ninja</span> chegou com
+                        combo exclusivo para devoradores de aventura.</p>
                     <a href="#promocoes" class="hero-cta">Quero Meu Combo!</a>
                 </div>
 
                 <div class="hero-banner__visual">
-                    <img src="./public/images/hero-burguer-gif.gif" alt="Hambúrguer KB Ninja com coroa" class="hero-image">
+                    <img src="./public/images/hero-burguer-gif.gif" alt="Hambúrguer KB Ninja com coroa"
+                        class="hero-image">
                 </div>
             </div>
 
@@ -94,35 +100,84 @@
 
         <section class="section-kings-bacon" aria-labelledby="kings-bacon-title">
             <div class="container section-kings-bacon__inner">
-                <div class="section-kings-bacon__header">
-                    <h2 class="section-kings-bacon__title" id="kings-bacon-title">THE KINGS</h2>
-                    <p class="section-kings-bacon__eyebrow">BACON</p>
+                <div class="container section-kings-bacon__inner">
+                    <div class="section-kings-bacon__header">
+                        <h2 class="section-kings-bacon__title" id="kings-bacon-title">THE KINGS</h2>
+                        <p class="section-kings-bacon__eyebrow">BACON</p>
+                    </div>
+
+                    <div class="section-kings-bacon__grid">
+                        <article class="product-card product-card--side">
+                            <p class="product-card__label">KING BACON CHICKEN</p>
+                            <div class="product-card__image-wrap">
+                                <img src="./public/images/the-king-bacon-hamb1.png" alt="King Bacon Chicken"
+                                    class="product-card__image">
+                            </div>
+                        </article>
+
+                        <article class="product-card product-card--center">
+                            <p class="product-card__label">KING DUPLO BACON</p>
+                            <div class="product-card__image-wrap">
+                                <img src="./public/images/the-king-bacon-bacon.png" alt="King Duplo Bacon"
+                                    class="product-card__image">
+                            </div>
+                        </article>
+
+                        <article class="product-card product-card--side">
+                            <p class="product-card__label">KING BACON</p>
+                            <div class="product-card__image-wrap">
+                                <img src="./public/images/the-king-bacon-hamb2.png" alt="King Bacon"
+                                    class="product-card__image">
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-king-dobro" aria-labelledby="king-dobro-title">
+            <div class="container section-king-dobro__inner">
+                <div class="section-king-dobro__copy">
+                    <h2 class="king-dobro-eyebrow" id="king-dobro-title">KING EM DOBRO</h2>
+
+                    <div class="king-dobro-headline" aria-hidden="true">
+                        <span class="king-dobro-headline__number">2</span>
+                        <span class="king-dobro-headline__label">BURGERS</span>
+                    </div>
+
+                    <p class="king-dobro-subtitle">· A PARTIR DE</p>
+
+                    <div class="king-dobro-price">
+                        <span class="king-dobro-price__currency">R$</span>
+                        <span class="king-dobro-price__amount">25</span>
+                        <span class="king-dobro-price__cents">,90</span>
+                    </div>
+
+                    <p class="king-dobro-note">OS PREÇOS PROMOCIONAIS SÃO VÁLIDOS ATÉ DIA MM/DD/AAAA. CONSULTE AS UNIDADES PARTICIPANTES. IMAGENS MERAMENTE ILUSTRATIVAS.</p>
                 </div>
 
-                <div class="section-kings-bacon__grid">
-                    <article class="product-card product-card--side">
-                        <p class="product-card__label">KING BACON CHICKEN</p>
-                        <div class="product-card__image-wrap">
-                            <img src="./public/images/the-king-bacon-hamb1.png" alt="King Bacon Chicken" class="product-card__image">
-                        </div>
-                    </article>
+                <aside class="king-dobro-card" aria-label="Opções de burgers">
+                    <p class="king-dobro-card__title">ESCOLHA ENTRE:</p>
+                    <div class="king-dobro-card__grid">
+                        <article class="king-dobro-card__item">
+                            <img src="./public/images/king-em-dobro-2.png" alt="Chicken Duplo" class="king-dobro-card__image">
+                            <p class="king-dobro-card__label">CHICKEN DUPLO</p>
+                        </article>
 
-                    <article class="product-card product-card--center">
-                        <p class="product-card__label">KING DUPLO BACON</p>
-                        <div class="product-card__image-wrap">
-                            <img src="./public/images/the-king-bacon-bacon.png" alt="King Duplo Bacon" class="product-card__image">
-                        </div>
-                    </article>
+                        <article class="king-dobro-card__item">
+                            <img src="./public/images/king-em-dobro-3.png" alt="Stacker Duplo Bacon" class="king-dobro-card__image">
+                            <p class="king-dobro-card__label">STACKER DUPLO BACON</p>
+                        </article>
 
-                    <article class="product-card product-card--side">
-                        <p class="product-card__label">KING BACON</p>
-                        <div class="product-card__image-wrap">
-                            <img src="./public/images/the-king-bacon-hamb2.png" alt="King Bacon" class="product-card__image">
-                        </div>
-                    </article>
-                </div>
+                        <article class="king-dobro-card__item">
+                            <img src="./public/images/menu-king-duplo.png" alt="Rodeio Duplo" class="king-dobro-card__image">
+                            <p class="king-dobro-card__label">RODEIO DUPLO</p>
+                        </article>
+                    </div>
+                </aside>
             </div>
         </section>
     </main>
 </body>
+
 </html>
