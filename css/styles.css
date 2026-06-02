@@ -611,6 +611,140 @@ button, label {
   }
 }
 
+
+/* ============================================ */
+/* Seção: HMMMM - Crispy Chicken Nuggets        */
+/* ============================================ */
+
+.section-hmmm {
+  color: #FFFFFF;
+  padding: 3rem var(--container-padding);
+  background: radial-gradient(circle at 25% 40%, #8B1A00 0%, #5A1000 30%, #3D0A00 100%);
+}
+
+.section-hmmm__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-hmmm__header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-hmmm__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  font-weight: 900;
+  color: #FFFFFF;
+  letter-spacing: -0.02em;
+}
+
+.section-hmmm__subtitle {
+  margin: 0;
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.75);
+}
+
+.section-hmmm__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 var(--container-padding);
+}
+
+.hmmm-image img {
+  width: 85%;
+  max-width: 280px;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.hmmm-content {
+  width: 100%;
+  max-width: 420px;
+}
+
+.hmmm-product-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #F5A623;
+}
+
+.hmmm-description {
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.5;
+}
+
+.hmmm-attributes {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hmmm-attr {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  background: rgba(255,255,255,0.10);
+  border-radius: 8px;
+  padding: 10px 14px;
+  min-width: 120px;
+}
+
+.hmmm-attr__icon img { width: 20px; height: 20px; display:block; }
+
+.hmmm-attr__title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.hmmm-attr__desc {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.65);
+}
+
+@media (min-width: 900px) {
+  .section-hmmm__body {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0 5rem;
+  }
+
+  .hmmm-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+  }
+
+  .hmmm-content {
+    width: 320px;
+  }
+
+  .section-hmmm__title { font-size: 3.25rem; }
+  .section-hmmm__subtitle { font-size: 0.875rem; }
+
+  .hmmm-attributes { justify-content: flex-start; }
+
+  .hmmm-attr { min-width: auto; }
+}
+
+
 .section-kings-bacon {
   background: #F5ECD7;
   padding: 4rem 0 3rem;
