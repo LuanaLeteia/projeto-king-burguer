@@ -745,6 +745,198 @@ button, label {
 }
 
 
+/* ============================================ */
+/* Seção: O Poder Ninja Chegou ao BK!          */
+/* ============================================ */
+
+.section-ninja {
+  position: relative;
+  color: #FFFFFF;
+  padding: 3.5rem var(--container-padding);
+  background: radial-gradient(circle at 40% 15%, #1DB954 0%, #26B86A 25%, #158A3E 100%);
+  overflow: hidden;
+}
+
+.section-ninja__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.section-ninja__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+}
+
+.section-ninja__nav--prev {
+  left: 16px;
+}
+
+.section-ninja__nav--next {
+  right: 16px;
+}
+
+.section-ninja__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.section-ninja__copy {
+  width: min(100%, 420px);
+}
+
+.section-ninja__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: #FFD700;
+  color: #101010;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+}
+
+.section-ninja__title {
+  margin: 0 0 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.section-ninja__text {
+  margin: 0 0 1.5rem;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 320px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.section-ninja__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #FFFFFF;
+  background: transparent;
+  color: #FFFFFF;
+  padding: 0.85rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 200ms ease, color 200ms ease;
+}
+
+.section-ninja__cta:hover,
+.section-ninja__cta:focus-visible {
+  background: #FFFFFF;
+  color: #158A3E;
+}
+
+.section-ninja__visual {
+  width: min(100%, 520px);
+}
+
+.section-ninja__image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #2A2A2A;
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+  position: relative;
+}
+
+.section-ninja__image-grid::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background-image: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 16px 16px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.section-ninja__image-grid > img {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  .section-ninja__body {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-ninja__copy,
+  .section-ninja__visual {
+    width: 100%;
+  }
+
+  .section-ninja__image-grid {
+    padding: 0.75rem;
+  }
+
+  .section-ninja__image-grid > img {
+    height: 140px;
+  }
+
+  .section-ninja__nav {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+
+  .section-ninja__body {
+    gap: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-ninja {
+    padding: 2rem var(--container-padding);
+  }
+
+  .section-ninja__title {
+    font-size: clamp(2rem, 8vw, 3.5rem);
+  }
+
+  .section-ninja__text {
+    font-size: 0.85rem;
+  }
+
+  .section-ninja__cta {
+    width: min(280px, 100%);
+  }
+}
+
+
 .section-kings-bacon {
   background: #F5ECD7;
   padding: 4rem 0 3rem;
