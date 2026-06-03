@@ -856,33 +856,26 @@ button, label {
   width: min(100%, 520px);
 }
 
-.section-ninja__image-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.75rem;
-  padding: 1rem;
-  border-radius: 12px;
-  background: #2A2A2A;
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+.section-ninja__image-card {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   position: relative;
+  overflow: hidden;
 }
 
-.section-ninja__image-grid::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 12px;
-  background-image: radial-gradient(circle at 10% 10%, rgba(255,255,255,0.12) 1px, transparent 1px);
-  background-size: 16px 16px;
-  opacity: 0.35;
-  pointer-events: none;
+.section-ninja__image-card::before {
+  display: none;
 }
 
-.section-ninja__image-grid > img {
+.section-ninja__image-card > img {
+  display: block;
   width: 100%;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 12px;
+  height: auto;
+  max-height: 360px;
+  object-fit: contain;
+  border-radius: 0;
   position: relative;
   z-index: 1;
 }
@@ -899,12 +892,12 @@ button, label {
     width: 100%;
   }
 
-  .section-ninja__image-grid {
+  .section-ninja__image-card {
     padding: 0.75rem;
   }
 
-  .section-ninja__image-grid > img {
-    height: 140px;
+  .section-ninja__image-card > img {
+    max-height: 280px;
   }
 
   .section-ninja__nav {
