@@ -1553,3 +1553,213 @@ button, label {
     font-size: 0.875rem;
   }
 }
+
+.section-clube-kb {
+  background: #6F3F13;
+  padding: 4rem 0 5rem;
+  color: #FFFFFF;
+}
+
+.section-clube-kb__inner {
+  display: grid;
+  grid-template-columns: minmax(280px, 360px) minmax(320px, 1fr);
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.section-clube-kb__card {
+  background: #F8F1E5;
+  border-radius: 2rem;
+  padding: 2rem;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.16);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section-clube-kb__card-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(111, 63, 19, 0.12);
+  color: #6F3F13;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.section-clube-kb__badge {
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: #6F3F13;
+  display: inline-block;
+}
+
+.section-clube-kb__label-text {
+  letter-spacing: 0.08em;
+}
+
+.section-clube-kb__phone-frame {
+  background: #FFFFFF;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.section-clube-kb__image {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 1.5rem;
+  object-fit: contain;
+}
+
+.section-clube-kb__card-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.section-clube-kb__action {
+  background: #F8E8DC;
+  border: none;
+  border-radius: 1rem;
+  min-height: 72px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6F3F13;
+  transition: transform var(--transition), background var(--transition);
+  cursor: pointer;
+}
+
+.section-clube-kb__action:hover,
+.section-clube-kb__action:focus-visible {
+  transform: translateY(-2px);
+  background: rgba(111, 63, 19, 0.16);
+}
+
+.section-clube-kb__action .material-symbols-outlined {
+  font-size: 1.5rem;
+}
+
+.section-clube-kb__copy {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section-clube-kb__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.section-clube-kb__text {
+  margin: 0;
+  max-width: 42rem;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.section-clube-kb__downloads {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.section-clube-kb__download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: 0.875rem;
+  background: rgba(248, 232, 220, 0.15);
+  color: #F8E8DC;
+  border: 1px solid rgba(248, 232, 220, 0.3);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.section-clube-kb__download-btn:hover,
+.section-clube-kb__download-btn:focus-visible {
+  background: rgba(248, 232, 220, 0.25);
+  border-color: rgba(248, 232, 220, 0.5);
+  transform: translateY(-2px);
+}
+
+.section-clube-kb__download-icon {
+  font-size: 1.5rem;
+}
+
+.section-clube-kb__download-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+  text-align: left;
+}
+
+.section-clube-kb__download-label {
+  display: block;
+  font-size: 0.7rem;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.section-clube-kb__download-store {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .section-clube-kb__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .section-clube-kb__card {
+    padding: 1.75rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section-clube-kb {
+    padding: 3rem 0 3.5rem;
+  }
+
+  .section-clube-kb__card-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .section-clube-kb__title {
+    font-size: clamp(2rem, 10vw, 2.8rem);
+  }
+
+  .section-clube-kb__downloads {
+    grid-template-columns: 1fr;
+  }
+}
