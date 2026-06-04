@@ -293,6 +293,83 @@
                 <button type="button" class="section-ninja__nav section-ninja__nav--next" aria-label="Próximo slide">›</button>
             </div>
         </section>
+
+        <section class="section-menu" id="menu" aria-labelledby="menu-title">
+            <div class="container section-menu__inner">
+                <div class="section-menu__header">
+                    <h2 class="section-menu__title" id="menu-title">NOSSO MENU</h2>
+                    <p class="section-menu__subtitle">Explore nossas deliciosas produtos</p>
+                </div>
+
+                <div class="section-menu__filters" aria-label="Filtros de categorias">
+                    <button type="button" class="menu-filter menu-filter--active" data-category="todos">TODOS</button>
+                    <button type="button" class="menu-filter" data-category="burgers">BURGERS</button>
+                    <button type="button" class="menu-filter" data-category="bebidas">BEBIDAS</button>
+                    <button type="button" class="menu-filter" data-category="acompanhamentos">ACOMPANHAMENTOS</button>
+                </div>
+
+                <div class="section-menu__grid">
+                    <!-- Coluna 1: Cards Laranja -->
+                    <div class="menu-column menu-column--orange">
+                        <article class="menu-card menu-card--orange">
+                            <h3 class="menu-card__title">REFRIGERANTE</h3>
+                            <p class="menu-card__description">Coca-Cola, Pepsi ou Guaraná gelado</p>
+                            <div class="menu-card__price">
+                                <span class="menu-card__currency">R$</span>
+                                <span class="menu-card__amount">8,90</span>
+                            </div>
+                        </article>
+
+                        <article class="menu-card menu-card--orange">
+                            <h3 class="menu-card__title">BACON</h3>
+                            <p class="menu-card__description">Bacon crocante e saboroso</p>
+                            <div class="menu-card__price">
+                                <span class="menu-card__currency">R$</span>
+                                <span class="menu-card__amount">14,90</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Coluna 2: Cards Laranja -->
+                    <div class="menu-column menu-column--orange">
+                        <article class="menu-card menu-card--orange">
+                            <h3 class="menu-card__title">KING DUPLO</h3>
+                            <p class="menu-card__description">Dois hamburgueres, queijo, alface, tomate e molho especial</p>
+                            <div class="menu-card__price">
+                                <span class="menu-card__currency">R$</span>
+                                <span class="menu-card__amount">32,90</span>
+                            </div>
+                        </article>
+
+                        <article class="menu-card menu-card--orange">
+                            <h3 class="menu-card__title">KING CHICKEN</h3>
+                            <p class="menu-card__description">Frango crocante com molho especial e alface</p>
+                            <div class="menu-card__price">
+                                <span class="menu-card__currency">R$</span>
+                                <span class="menu-card__amount">22,90</span>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Coluna 3: Cards Brancos com Imagem -->
+                    <div class="menu-column menu-column--white">
+                        <article class="menu-card menu-card--white">
+                            <div class="menu-card__image-wrap">
+                                <img src="./public/images/menu-refrigerante.png" alt="Refrigerante" class="menu-card__image">
+                            </div>
+                            <h3 class="menu-card__title">REFRIGERANTE</h3>
+                        </article>
+
+                        <article class="menu-card menu-card--white">
+                            <div class="menu-card__image-wrap">
+                                <img src="./public/images/menu-bacon.png" alt="Bacon" class="menu-card__image">
+                            </div>
+                            <h3 class="menu-card__title">BACON</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 

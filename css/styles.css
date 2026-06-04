@@ -9,6 +9,9 @@
   --color-border: rgba(27, 27, 27, 0.08);
   --color-overlay: rgba(0, 0, 0, 0.32);
 
+  --color-menu-bg: #3D1A0A;
+  --color-menu-orange: #D94F00;
+
   --font-body: 'Open Sans', sans-serif;
   --font-display: 'Titan One', cursive;
 
@@ -1290,5 +1293,252 @@ button, label {
 
   .ingredient-card {
     width: 100%;
+  }
+}
+
+/* ============================================ */
+/* Seção: Nosso Menu                            */
+/* ============================================ */
+
+.section-menu {
+  background-color: var(--color-menu-bg);
+  padding: 3rem var(--container-padding);
+  width: 100%;
+}
+
+.section-menu__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-menu__header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.section-menu__title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 8vw, 2.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.section-menu__subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Filtros / Tabs */
+.section-menu__filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.menu-filter {
+  border: none;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #FFFFFF;
+  padding: 0.5rem 1.25rem;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.menu-filter:hover {
+  border-color: var(--color-menu-orange);
+  color: #FFFFFF;
+}
+
+.menu-filter--active {
+  background-color: var(--color-menu-orange);
+  border-color: var(--color-menu-orange);
+  color: #FFFFFF;
+}
+
+/* Grade de produtos */
+.section-menu__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .section-menu__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+/* Coluna de cards */
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 899px) {
+  .menu-column--orange:first-child {
+    display: none;
+  }
+
+  .menu-column--white {
+    display: none;
+  }
+}
+
+/* Cards de produto */
+.menu-card {
+  border-radius: 0.75rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cards Laranja */
+.menu-card--orange {
+  background-color: var(--color-menu-orange);
+  color: #FFFFFF;
+  padding: 1.25rem;
+  justify-content: space-between;
+  min-height: 140px;
+}
+
+.menu-card__title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.menu-card__description {
+  margin: 0.5rem 0 0;
+  font-size: 0.6875rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.75);
+  flex-grow: 1;
+}
+
+.menu-card__price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.menu-card__currency {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.menu-card__amount {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+/* Cards Brancos */
+.menu-card--white {
+  background-color: #FFFFFF;
+  color: #1B1B1B;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
+  min-height: 140px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.menu-card__image-wrap {
+  width: 100%;
+  height: 65%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-card--white .menu-card__title {
+  font-size: 0.8125rem;
+  color: #1B1B1B;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-top: auto;
+}
+
+/* Mobile responsivo */
+@media (max-width: 640px) {
+  .section-menu {
+    padding: 1.25rem var(--container-padding);
+  }
+
+  .section-menu__title {
+    font-size: 1.75rem;
+  }
+
+  .section-menu__subtitle {
+    font-size: 0.75rem;
+  }
+
+  .section-menu__grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .menu-filter {
+    padding: 0.5rem 1rem;
+    font-size: 0.625rem;
+  }
+
+  .menu-card--orange {
+    padding: 1rem;
+    min-height: auto;
+  }
+
+  .menu-card--white {
+    padding: 0.5rem;
+    min-height: auto;
+  }
+
+  .menu-card__title {
+    font-size: 0.875rem;
+  }
+
+  .menu-card__description {
+    font-size: 0.625rem;
+  }
+
+  .menu-card__price {
+    font-size: 0.875rem;
   }
 }
