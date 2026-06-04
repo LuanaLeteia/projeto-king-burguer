@@ -1348,7 +1348,7 @@ button, label {
 .menu-filter {
   border: none;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.9);
   color: #FFFFFF;
   padding: 0.5rem 1.25rem;
   border-radius: 999px;
@@ -1361,7 +1361,7 @@ button, label {
 }
 
 .menu-filter:hover {
-  border-color: var(--color-menu-orange);
+  border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
@@ -1379,6 +1379,7 @@ button, label {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
+  align-items: start;
 }
 
 @media (min-width: 900px) {
@@ -1411,6 +1412,7 @@ button, label {
   height: auto;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 /* Cards Laranja */
@@ -1420,6 +1422,8 @@ button, label {
   padding: 1.25rem;
   justify-content: space-between;
   min-height: 140px;
+  height: 140px;
+  box-sizing: border-box;
 }
 
 .menu-card__title {
@@ -1463,9 +1467,10 @@ button, label {
 .menu-card--white {
   background-color: #FFFFFF;
   color: #1B1B1B;
-  padding: 0.75rem;
+  padding: 0.85rem;
   border-radius: 0.75rem;
   min-height: 140px;
+  height: 140px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1475,16 +1480,21 @@ button, label {
 
 .menu-card__image-wrap {
   width: 100%;
-  height: 65%;
+  height: 84px;
+  flex: 0 0 84px;
   overflow: hidden;
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.35rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F8F7F2;
 }
 
 .menu-card__image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .menu-card--white .menu-card__title {
@@ -1493,8 +1503,9 @@ button, label {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.04em;
-  margin-top: auto;
+  margin-top: 0.5rem;
 }
+
 
 /* Mobile responsivo */
 @media (max-width: 640px) {
