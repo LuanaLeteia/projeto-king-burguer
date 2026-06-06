@@ -521,16 +521,17 @@ button, label {
 }
 
 .king-dobro-card {
-  width: min(100%, 360px);
-  aspect-ratio: 1 / 1;
+  width: min(100%, 280px);
+  max-width: 280px;
   background: #faf7f2;
   border-radius: 1rem;
-  padding: 1.5rem;
+  padding: 1rem;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.16);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  gap: 1rem;
   justify-self: end;
 }
 
@@ -538,7 +539,7 @@ button, label {
   color: #6f3f13;
   font-family: var(--font-display);
   font-size: 1rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
@@ -547,13 +548,18 @@ button, label {
 
 .king-dobro-card__grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 1rem;
   justify-items: center;
+  width: 100%;
 }
 
 .king-dobro-card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
+  width: 100%;
 }
 
 .king-dobro-card__image {
@@ -571,6 +577,7 @@ button, label {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #111111;
+  width: 100%;
 }
 
 @media (max-width: 960px) {
@@ -1860,16 +1867,41 @@ button, label {
     padding: 3rem 0 3.5rem;
   }
 
-  .section-clube-kb__card-actions {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.5rem;
+  .section-clube-kb__inner {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-clube-kb__card {
+    padding: 1.5rem;
+  }
+
+  .section-clube-kb__copy {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
   }
 
   .section-clube-kb__title {
     font-size: clamp(2rem, 10vw, 2.8rem);
   }
 
+  .section-clube-kb__text {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section-clube-kb__downloads {
     grid-template-columns: 1fr;
+  }
+
+  .section-clube-kb__download-btn {
+    width: 100%;
+  }
+
+  .section-clube-kb__card-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.5rem;
   }
 }
