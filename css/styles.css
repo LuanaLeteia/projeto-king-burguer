@@ -835,10 +835,11 @@ button, label {
 
 .section-ninja__title {
   margin: 0 0 1rem;
-  font-family: var(--font-display);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
-  line-height: 1.05;
-  letter-spacing: -0.04em;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .section-ninja__text {
@@ -1674,11 +1675,12 @@ button, label {
 
 .section-clube-kb__title {
   margin: 0;
-  font-family: var(--font-display);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
   font-size: clamp(2.5rem, 4vw, 4rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .section-clube-kb__text {
