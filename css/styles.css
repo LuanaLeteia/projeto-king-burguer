@@ -305,19 +305,21 @@ button, label {
   border: 1px solid var(--color-hero-green);
   background: rgba(42, 225, 119, 0.15);
   color: var(--color-hero-green);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
 .hero-title {
   margin: 0 0 1.5rem;
-  font-family: 'Anton', sans-serif;
-  font-size: clamp(4.5rem, 6vw, 6.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.02em;
+  font-family: var(--font-display);
+  font-size: clamp(4.5rem, 6vw, 6rem);
+  line-height: 1;
+  letter-spacing: 0;
   text-transform: uppercase;
 }
 
@@ -332,9 +334,10 @@ button, label {
 .hero-description {
   margin: 0 0 2rem;
   max-width: 40rem;
-  font-size: clamp(1rem, 1.1vw, 1.125rem);
-  line-height: 1.8;
-  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0;
   color: rgba(255, 255, 255, 0.85);
 }
 
@@ -352,9 +355,12 @@ button, label {
   border-radius: 999px;
   background: var(--color-hero-green);
   color: var(--color-hero-white);
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.4;
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0;
   transition: transform var(--transition), filter var(--transition);
 }
 
@@ -640,15 +646,20 @@ button, label {
 .section-hmmm__title {
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 6vw, 3.25rem);
-  font-weight: 900;
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-weight: 400;
+  line-height: 1;
   color: #FFFFFF;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.05em;
 }
 
 .section-hmmm__subtitle {
   margin: 0;
-  font-size: 0.875rem;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
   color: rgba(255,255,255,0.75);
 }
 
@@ -676,16 +687,19 @@ button, label {
 
 .hmmm-product-title {
   margin: 0 0 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 400;
   color: #F5A623;
 }
 
 .hmmm-description {
   margin: 0 0 1rem;
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
   color: rgba(255,255,255,0.9);
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 .hmmm-attributes {
@@ -950,9 +964,11 @@ button, label {
 .section-kings-bacon__eyebrow {
   margin: 0 auto 0.75rem;
   display: inline-block;
-  font-size: 1rem;
-  font-weight: 700;
-  letter-spacing: 0.18em;
+  font-family: var(--font-display);
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #C9A84C;
 }
@@ -960,9 +976,10 @@ button, label {
 .section-kings-bacon__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 6vw, 4.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
+  font-size: clamp(4.5rem, 8vw, 4.5rem);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   color: #111111;
 }
@@ -1184,18 +1201,20 @@ button, label {
 .section-premium-ingredients__title {
   margin: 0 0 1rem;
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 6vw, 3rem);
-  line-height: 1.1;
-  letter-spacing: -0.04em;
+  font-size: clamp(4.5rem, 8vw, 4.5rem);
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 0;
   text-transform: uppercase;
   color: #1A1A1A;
 }
 
 .section-premium-ingredients__subtitle {
   margin: 0;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
   color: rgba(26, 26, 26, 0.6);
   max-width: 400px;
   margin-left: auto;
@@ -1321,18 +1340,20 @@ button, label {
 .section-menu__title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 8vw, 2.5rem);
-  font-weight: 700;
+  font-size: clamp(4.5rem, 8vw, 4.5rem);
+  font-weight: 400;
+  line-height: 1;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0;
   color: #FFFFFF;
 }
 
 .section-menu__subtitle {
   margin: 0.5rem 0 0;
-  font-size: 0.8125rem;
-  font-weight: 400;
-  letter-spacing: 0.05em;
+  font-family: var(--font-body);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: 0;
   color: rgba(255, 255, 255, 0.6);
 }
 
